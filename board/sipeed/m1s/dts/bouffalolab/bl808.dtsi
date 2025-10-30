@@ -164,7 +164,7 @@
 		i2c0: i2c@2000a300 {
             compatible = "bflb,bl808-i2c";
             reg = <0x2000a300 0x100>;
-            interrupts = <40>;
+            interrupts-extended = <&m0ic 40>;
             #address-cells = <1>;
             #size-cells = <0>;
             clocks = <&xtal>;
@@ -175,7 +175,7 @@
         i2c1: i2c@2000a900 {
             compatible = "bflb,bl808-i2c";
             reg = <0x2000a900 0x100>;
-            interrupts = <41>;
+            interrupts-extended = <&m0ic 41>;
             #address-cells = <1>;
             #size-cells = <0>;
             clocks = <&xtal>;
@@ -208,7 +208,7 @@
 		spi0: spi@20008000 {
 			compatible = "bflb,bl808-spi";
 			reg = <0x20008000 0x200>;
-			interrupts = <54>;
+			interrupts-extended = <&m0ic 54>;
 			clocks = <&xtal>;
 			clock-frequency = <10000000>;
 			#address-cells = <1>;
@@ -219,7 +219,7 @@
 		spi1: spi@20009000 {
 			compatible = "bflb,bl808-spi";
 			reg = <0x20009000 0x200>;
-			interrupts = <55>;
+			interrupts-extended = <&m0ic 55>;
 			clocks = <&xtal>;
 			clock-frequency = <10000000>;
 			#address-cells = <1>;
@@ -230,7 +230,7 @@
 		spi2: spi@2000a000 {
 			compatible = "bflb,bl808-spi";
 			reg = <0x2000a000 0x200>;
-			interrupts = <56>;
+			interrupts-extended = <&m0ic 56>;
 			clocks = <&xtal>;
 			clock-frequency = <10000000>;
 			#address-cells = <1>;
