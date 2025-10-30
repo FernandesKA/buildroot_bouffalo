@@ -3,10 +3,6 @@
  * Copyright (C) 2023 Bouffalo Lab
  */
 
-#include <dt-bindings/interrupt-controller/irq.h>
-#include <dt-bindings/mailbox/bflb-ipc.h>
-#include <dt-bindings/pinctrl/pinctrl-bflb.h>
-
 / {
 	compatible = "bflb,bl808";
 	#address-cells = <1>;
